@@ -1,0 +1,236 @@
+.Home {
+  .buttonExit {
+    position: absolute;
+    left: 1280px;
+    bottom: 806px;
+
+    button {
+      width: 7em;
+      height: 2.9em;
+      border: none;
+      outline: none;
+      font-size: 17px;
+      font-weight: bold;
+      font-family: "Courier New", Courier, monospace;
+      border-radius: 7px;
+    }
+  }
+  .addProducts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.1px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    width: 150px;
+    height: 44px;
+    position: absolute;
+    bottom: 810px;
+    left: 1410px;
+  }
+
+  .aside {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-block: 20px;
+    margin-left: 11px;
+    overflow: hidden;
+    // margin-top: 30px;
+    .sectionEdit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid rgb(74, 157, 236, 20%);
+
+      input {
+        border: 2px solid transparent;
+        width: 22em;
+        height: 3em;
+        padding-left: 0.8em;
+        outline: none;
+        overflow: hidden;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        transition: all 0.5s;
+      }
+
+      input:hover,
+      input:focus {
+        border: 2px solid #4a9dec;
+        box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+        background-color: white;
+      }
+      .buttonEdit {
+        color: #090909;
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        cursor: pointer;
+        border: 1px solid #e8e8e8;
+        transition: all 0.3s;
+        box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+        width: 17em;
+        height: 2em;
+      }
+
+      .buttonEdit:active {
+        color: #666;
+        box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+        z-index: 20;
+      }
+      .buttonEdit {
+        color: #090909;
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #e8e8e8;
+        cursor: pointer;
+        border: 1px solid #e8e8e8;
+        transition: all 0.3s;
+        box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+        z-index: 20;
+      }
+
+      button:active {
+        color: #666;
+        box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+        z-index: 20;
+      }
+    }
+    .render {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      padding-block: 25px;
+      margin-left: 18px;
+      p {
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .texts {
+        display: flex;
+        align-items: center;
+        width: 367px;
+        justify-content: space-between;
+        // gap: 270px;
+        .img {
+          width: 28px;
+          height: 35px;
+        }
+      }
+      .deleteScss {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 367px;
+
+        img {
+          width: 28px;
+          height: 31px;
+        }
+      }
+
+      .editBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 367px;
+        img {
+          width: 26px;
+          height: 23px;
+        }
+      }
+      img {
+        width: 380px;
+        height: 503px;
+
+        &:hover {
+          transition: all 2s ease-in-out;
+          filter: grayscale(111%);
+          border-radius: 7px;
+        }
+      }
+      button {
+        width: 380px;
+        height: 50px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        background: rgb(18, 19, 20);
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  p {
+    color: rgb(52, 54, 53);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  input {
+    border: 1px solid rgba(126, 132, 148, 0.47);
+    border-radius: 8px;
+    width: 446px;
+    height: 50px;
+
+    padding: 12px 16px 12px 16px;
+
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  .buttonOne {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: rgb(126, 132, 148);
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .buttonTwo {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    color: #fff;
+    background: rgb(18, 19, 20);
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
